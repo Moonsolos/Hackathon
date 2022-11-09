@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="img/logo.png" width="70" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="index.html">
+              Home
+            </a>
+      
+            <a class="navbar-item" href="company.html">
+              Company
+            </a>
+
+            <a class="navbar-item" href="artists.html">
+                Artists
+              </a>
+
+              <a class="navbar-item" href="webshop.html">
+                Webshop
+              </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <a class="navbar-item">
+                Shopping cart
+              </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      Account
+                    </a>
+            
+                    <div class="navbar-dropdown">
+
+                      <a class="navbar-item">
+                        Sign up
+                      </a>
+                      <a class="navbar-item">
+                        Log in
+                      </a>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="w3-content w3-display-container"></div>
+      
+      <div class="w3-display-container mySlides">
+      <section class="hero is-large is-info">
+        <div class="hero-body hero-image">
+          <p class="title has-text-white is-size-1">
+            Artists
+          </p>
+          <p class="subtitle has-text-white">
+            Your artists, your music
+          </p>
+          <div class="buttons">
+            <a class="button is-primary" href="../Hackathon/artists.html">
+              <p>Take me there!</p>
+            </a>
+        </div>
+      </section>
+    </div>
+    </div>
+
+    <div class="w3-display-container mySlides">
+        <section class="hero is-large is-info">
+            <div class="hero-body webshop-image">
+              <p class="title has-text-white is-size-1">
+                Webshop
+              </p>
+              <p class="subtitle has-text-white">
+                Our newest albums in stock
+              </p>
+              <div class="buttons">
+                <a class="button is-primary" href="../Hackathon/webshop.html">
+                  <p>Shop</p>
+                </a>
+            </div>
+          </section>
+        </div>
+
+    <div class="w3-display-container mySlides">
+        <section class="hero is-large is-info">
+            <div class="hero-body section-image">
+            <p class="title has-text-white is-size-1">
+            Company
+             </p>
+            <p class="subtitle has-text-white">
+            Forest Entertainment
+            </p>
+            <div class="buttons">
+                <a class="button is-primary" href="../Hackathon/company.html">
+                  <p>Info</p>
+                </a>
+            </div>
+      </section>
+    </div>
+
+    <section class="background">
+        <section class="section">
+          <div class="tile is-ancestor">
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">Big Time Shush</p>
+                <figure class="image">
+                    <img src="img/btralbum.jpg">
+                  </figure>
+                <p>Big Time Shush 1st Single Album</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">Dreamgiver</p>
+                <figure class="image">
+                <img src="img/dcalbum.jpg">
+                </figure>
+                <p>Dreamgiver 4th Mini Album</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title">Dreamgiver</p>
+                  <figure class="image">
+                  <img src="img/dcalbum2.jpg">
+                  </figure>
+                  <p>Dreamgiver 5th Mini Album</p>
+                </article>
+              </div>
+          </div>
+        </section>
+        
+        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <div class="text">
+        <p><strong>Forest Entertainment</strong></p>
+        <p>Zoutstraat 45, 2460 LH Sexbierum</p>
+        <p>Copyright © Forest Entertainment</p>
+        </div>
+    </div>
+</footer>
+        
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+</body>
+</html>
